@@ -1,0 +1,55 @@
+@import "_normalize";
+@import "_variables";
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@400;600&display=swap");
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//.waterApp--tittle {
+ // margin-bottom: 64px;
+//}
+
+
+body{
+  background-color: #6F7D8C;
+  color: white;
+  font-family: 'Baloo Thambi 2';
+}
+
+.waterApp{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.waterApp__svg {
+  display: block;
+  max-width: 270px;
+  max-height: 270px;
+  margin: 32px 0 12px 0;
+}
+
+.waterApp__button{
+  display: block;
+  width: 136px;
+  height: 32px;
+  margin: 10px;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 15px;
+  color: white;
+  &--add {
+    background-color: #50C1E9;
+  }
+  &--remove {
+    background-color: #ec544d;
+  }
+}
