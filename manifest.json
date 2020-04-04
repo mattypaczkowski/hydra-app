@@ -2,7 +2,7 @@
   "name": "Water App",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "browser",
+  "display": "standalone",
   "Scope": "/water-app/",
   "start_url": "/water-app/",
   "icons": [
