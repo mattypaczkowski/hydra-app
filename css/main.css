@@ -347,10 +347,10 @@ body {
   margin-top: 56px; }
 
 .waterApp__numbers {
-  font-size: 78px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 160px; }
+  font-size: 82px;
+  font-weight: 600;
+  position: relative;
+  bottom: 135px; }
 
 .waterApp__button {
   display: block;
