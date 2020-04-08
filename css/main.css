@@ -338,7 +338,8 @@ body {
   height: 100vh; }
 
 .waterApp__tittle {
-  font-size: 38px; }
+  font-size: 38px;
+  margin-top: 0; }
 
 .waterApp__svg {
   display: block;
@@ -366,7 +367,7 @@ body {
   color: white; }
   .waterApp__button--add {
     background-color: #50C1E9;
-    margin-top: 42px; }
+    margin-top: 0px; }
   .waterApp__button--remove {
     background-color: #ec544d; }
 
@@ -374,7 +375,7 @@ body {
   height: 20px;
   width: 20px;
   position: relative;
-  left: 164px;
-  top: 24px; }
+  left: 158px;
+  top: 30px; }
 
 /*# sourceMappingURL=main.css.map */
