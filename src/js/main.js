@@ -25,8 +25,6 @@ const removeButtonSelector = document.querySelector('.waterApp__button--remove')
 const numbersSelector = document.querySelector('.waterApp__numbers')
 
 
-
-
 addButtonSelector.addEventListener("click", e =>{
   ////add one glass more
   const valueSelector = numbersSelector.innerHTML
@@ -36,7 +34,6 @@ addButtonSelector.addEventListener("click", e =>{
     numbersSelector.innerText = newNumber.toString();
 
 }});
-
 
 removeButtonSelector.addEventListener("click", e =>{
   ////remove one glass more
