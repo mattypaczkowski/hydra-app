@@ -18,10 +18,7 @@
 
     <link rel="manifest" href="manifest.json" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta 
-     name='viewport' 
-     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'
-     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link
       rel="apple-touch-icon"
       sizes="192x192"
@@ -42,9 +39,11 @@
       <h1 class="waterApp__tittle">Water App</h1>
       <img class="waterApp__svg" src="assets/img/glass-of-water.svg" alt="piture galass of water">
       <div class="waterApp__numbers">0</div>
-      <button class="waterApp__button waterApp__button--add" type="button">Add</button>
-      <button class="waterApp__button waterApp__button--remove" type="button">Remove</button>
-    </div>
+      <div class="waterApp__buttons">
+        <button class="waterApp__button waterApp__button--add" type="button">Add</button>
+        <button class="waterApp__button waterApp__button--remove" type="button">Remove</button>
+      </div>
+      </div>
     <script src="js/main.js"></script>
   </body>
 </html>

@@ -12,30 +12,30 @@ html {
 }
 
 
-body{
+body {
   background-color: #6F7D8C;
   color: white;
   font-family: 'Baloo Thambi 2';
 }
 
-.waterApp{
+.waterApp {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 88vh;
 }
 
-.waterApp__tittle{
+.waterApp__tittle {
   font-size: 38px;
-  margin-top: 0;
+  margin-top: 18px;
 }
 
 .waterApp__svg {
   display: block;
   max-width: 236px;
   max-height: 236px;
-  margin-top: 56px;
+  margin-top: 32px;
 }
 
 .waterApp__numbers {
@@ -45,11 +45,11 @@ body{
   bottom: 135px;
 }
 
-.waterApp__button{
+.waterApp__button {
   display: block;
   width: 164px;
   height: 38px;
-  margin: 10px;
+  margin: 16px;
   font-size: 18px;
   font-weight: 600;
   border-style: none;
@@ -66,27 +66,39 @@ body{
   }
 }
 
+.waterApp__buttons{
+  margin-bottom: 22px;
+}
+
 .waterApp__info {
   height: 20px;
   width: 20px;
   position: relative;
-  left: 158px;
-  top: 30px;
+  left: 166px;
+  top: 36px;
   
 }
 
-.info--articel {
-  margin: 2rem 4rem;
-  padding: 1rem;
-  border: solid;
-  border-radius: 32px;
-}
-
-.info--articel__button{
+.info {
+  &__tittle {
+    text-align: center;
+    font-size: 2rem;
+  }
+  &__articel{
+    margin: 1.5rem 2rem;
+    padding: 1rem;
+    border: solid;
+    border-radius: 32px;
+  }
+  &__articel--div{
+    display: flex;
+    justify-content: center;
+  }
+  &__articel--button{
   display: block;
   width: 164px;
   height: 38px;
-  margin: 10px;
+  margin: 0px;
   font-size: 18px;
   font-weight: 600;
   border-style: none;
@@ -95,4 +107,13 @@ body{
   outline: none;
   color: white;
   background-color: #50C1E9;
+  }
+}
+
+@media only screen and (max-device-width: 825px) {
+  .info__tittle{
+    font-size: 1.75rem;
+  }
+
+
 }
