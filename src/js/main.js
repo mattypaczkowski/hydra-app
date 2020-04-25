@@ -17,6 +17,7 @@ if ('serviceWorker' in navigator) {
 // place your code below
 
 
+
 // add queryselector to button add
 const addButtonSelector = document.querySelector('.waterApp__button--add');
 // add queryselector to button remove
@@ -26,16 +27,19 @@ const value = document.querySelector('.waterApp__numbers');
 //curen data 
 const key = new Date().toISOString().slice(0, 10);
 
-addButtonSelector.addEventListener("click", e =>{
-  ////add one glass more
-  if (value.innerHTML < 99) {
-  value.innerHTML = parseInt(value.innerHTML) + 1;
-}});
+if (value) {
+
+  addButtonSelector.addEventListener("click", e =>{
+    ////add one glass more
+    if (value.innerHTML < 99) {
+    value.innerHTML = parseInt(value.innerHTML) + 1;
+  }});
 
 
-removeButtonSelector.addEventListener("click", e =>{
-  ////remove one glass more
-  if (value.innerHTML > 0) {
-  value.innerHTML = parseInt(value.innerHTML) - 1;
-}});
+  removeButtonSelector.addEventListener("click", e =>{
+    ////remove one glass more
+    if (value.innerHTML > 0) {
+    value.innerHTML = parseInt(value.innerHTML) - 1;
+  }});
 
+};
