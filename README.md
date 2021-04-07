@@ -1,10 +1,18 @@
-# wtf-gulp-starter
+![cover](https://cotenfrontend.pl/img/cover.png)
 
-`npm install -g gulp-cli`
+# WTF Webpack Starter Kit 
 
-`npm install`
+Simple toolkit for your static websites development.
 
-`gulp`
+## How to use it?
 
-To publish your page using github pages use `npm run deploy`
-# gulp
+Click on `Use this template` button to generate a new repository based on this starter kit. After that clone it to your computer, go to the project directory in console and type `npm install`.
+
+## Available scripts
+
+`npm run start` - runs development mode
+
+`npm run build` - runs build process for production
+
+`npm run publish` - runs build process and publish the page using `gh-pages` branch
+

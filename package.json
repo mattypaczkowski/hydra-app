@@ -1,52 +1,50 @@
 {
-  "name": "wtf-gulp-starter",
-  "version": "1.0.0",
-  "description": "",
+  "name": "wtf-webpack-starterkit",
+  "version": "1.0.1",
+  "description": "WTF Webpack starterkit",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "predeploy": "gulp build",
-    "deploy": "gh-pages -d dist"
+    "start": "webpack-dev-server --config webpack.dev.js --mode development",
+    "build": "webpack --config webpack.prod.js --mode production",
+    "publish": "npm run build && gh-pages -d dist",
+    "generate-icons": "npx pwa-asset-generator ./src/assets/img/logo.svg public/pwa -i ./src/pages/index.html -m ./public/manifest.json  --path-override pwa --type png -b \"#2D2241\""
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maciejkorsan/wtf-gulp-starter.git"
-  },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Webpack",
+    "boilerplate"
+  ],
+  "author": "Maciek Korsan",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/maciejkorsan/wtf-gulp-starter/issues"
-  },
-  "homepage": "https://github.com/maciejkorsan/wtf-gulp-starter#readme",
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
-    "@babel/polyfill": "^7.8.7",
-    "@babel/preset-env": "^7.9.0",
-    "@babel/register": "^7.9.0",
-    "autoprefixer": "^9.7.5",
+    "@babel/core": "^7.10.1",
+    "@babel/preset-env": "^7.10.1",
+    "autoprefixer": "^9.8.0",
     "babel-loader": "^8.1.0",
-    "browser-sync": "^2.26.7",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.0.1",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.5.3",
+    "file-loader": "^6.0.0",
     "gh-pages": "^2.2.0",
-    "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
-    "gulp-babel": "^8.0.0",
-    "gulp-notify": "^3.2.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5",
-    "node-sass": "^4.13.1",
-    "through2": "^3.0.1",
-    "vinyl-named": "^1.1.0",
-    "webpack": "^4.42.1",
-    "webpack-sources": "^1.4.3",
-    "webpack-stream": "^5.2.1"
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "minimist": "^1.2.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass": "^1.26.5",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^3.0.2",
+    "webpack": "4.43.0",
+    "webpack-cli": "3.3.11",
+    "webpack-dev-server": "3.11.0",
+    "webpack-merge": "4.2.2",
+    "websocket-extensions": "^0.1.4"
   },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
-  },
-  "dependencies": {}
+  "dependencies": {
+    "moment": "^2.29.1",
+    "normalize.css": "^8.0.1"
+  }
 }
